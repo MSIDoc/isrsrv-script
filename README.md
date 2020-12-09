@@ -23,7 +23,7 @@ This script creates a new non-sudo enabled user and installes the game in a fold
 
 - delete old logs
 
-- run from ramdisk
+- run from ramdisk (currently broken)
 
 - sync from ramdisk to hdd/ssd
 
@@ -62,6 +62,8 @@ This script creates a new non-sudo enabled user and installes the game in a fold
 # Supported distros
 
 - Arch Linux
+
+- Ubuntu 20.10
 
 - Ubuntu 20.04 LTS
 
@@ -186,7 +188,6 @@ You will be promped to enter a server number. These can range from 1-99 (single 
 | `-ssk_monitor` | Monitors SSK notifications in server consoles for a given time specified in the script config |
 | `-ssk_install` | Installs new SSK.txt file. Your new SSK.txt needs to be in /home/$USER folder before using this |
 | `-install_aliases` | Installs .bashrc aliases for easy access to the server tmux session |
-| `-rebuild_tmux_config` | Reinstalls the tmux configuration file from the script. Usefull if any tmux configuration updates occoured |
 | `-rebuild_commands` | Reinstalls the commands wrapper script if any updates occoured |
 | `-rebuild_services` | Reinstalls the systemd services from the script. Usefull if any service updates occoured |
 | `-rebuild_prefix` | Reinstalls the wine prefix. Usefull if any wine prefix updates occoured |
